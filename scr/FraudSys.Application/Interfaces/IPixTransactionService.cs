@@ -1,6 +1,11 @@
-﻿namespace FraudSys.Application.Interfaces
+﻿using FraudSys.Application.Abstractions;
+using FraudSys.Application.InputModels;
+using FraudSys.Domain.Entities;
+
+namespace FraudSys.Application.Interfaces
 {
-	public class IPixTransactionService
+	public interface IPixTransactionService
 	{
+		Task<Result<PixTransaction>> MakePixTransaction(CreatePixTransactionInputModel pixTransactionInputModel);
 	}
 }

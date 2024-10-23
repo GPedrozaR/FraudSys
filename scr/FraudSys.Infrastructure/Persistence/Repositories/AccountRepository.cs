@@ -7,8 +7,8 @@ namespace FraudSys.Infrastructure.Persistence.Repositories
 	public class AccountRepository : IAccountRepository
 	{
 
-		private readonly AccountDbContext _dbContext;
-		public AccountRepository(AccountDbContext context)
+		private readonly DbContext _dbContext;
+		public AccountRepository(DbContext context)
 		{
 			_dbContext = context;
 		}

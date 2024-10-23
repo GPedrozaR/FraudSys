@@ -1,6 +1,5 @@
 ﻿using FraudSys.Application.InputModels;
 using FraudSys.Application.Interfaces;
-using FraudSys.Application.Sevices;
 using FraudSys.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 

@@ -2,6 +2,7 @@
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using FraudSys.Application.Interfaces;
+using FraudSys.Application.Services;
 using FraudSys.Application.Sevices;
 using FraudSys.Domain.Repositories;
 using FraudSys.Infrastructure.Persistence;
@@ -16,8 +17,8 @@ namespace FraudSys.Infrastructure.Extensions
 		{
 			services.AddSingleton<IAmazonDynamoDB>(sp =>
 			{
-				var accessKey = "accessKey";
-				var secretKey = "secretKey";
+				var accessKey = "";
+				var secretKey = "";
 				var region = RegionEndpoint.SAEast1;
 
 				return new AmazonDynamoDBClient(accessKey, secretKey, region);
@@ -32,9 +33,13 @@ namespace FraudSys.Infrastructure.Extensions
 
 			services.AddScoped<IAccountRepository, AccountRepository>();
 
+			services.AddScoped<IPixTransactionRepository, PixTransactionRepository>();
+
 			services.AddScoped<IAccountService, AccountService>();
 
-			services.AddSingleton<AccountDbContext>();
+			services.AddScoped<IPixTransactionService, PixTransactionService>();
+
+			services.AddSingleton<DbContext>();
 
 			return services;
 		}
