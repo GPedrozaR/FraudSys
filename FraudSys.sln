@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudSys.Infrastructure", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudSys.Tests", "test\FraudSys.Tests\FraudSys.Tests.csproj", "{DB58A336-92DC-4592-873D-18974268EE9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudSys.API", "FraudSys.API\FraudSys.API.csproj", "{94A38CB1-C52D-4031-9FF1-E15F7DB862F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudSys.API", "scr\FraudSys.API\FraudSys.API.csproj", "{94A38CB1-C52D-4031-9FF1-E15F7DB862F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudSys.Application", "FraudSys.Application\FraudSys.Application.csproj", "{68DD5F32-E235-47E8-8BCD-524563AF65CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudSys.Application", "scr\FraudSys.Application\FraudSys.Application.csproj", "{68DD5F32-E235-47E8-8BCD-524563AF65CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

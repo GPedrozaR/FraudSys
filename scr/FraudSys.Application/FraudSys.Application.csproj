@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\scr\FraudSys.Domain\FraudSys.Domain.csproj" />
+    <ProjectReference Include="..\FraudSys.Domain\FraudSys.Domain.csproj" />
   </ItemGroup>
 
 </Project>

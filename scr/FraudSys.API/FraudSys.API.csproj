@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FraudSys.Application\FraudSys.Application.csproj" />
-    <ProjectReference Include="..\scr\FraudSys.Infrastructure\FraudSys.Infrastructure.csproj" />
+    <ProjectReference Include="..\FraudSys.Infrastructure\FraudSys.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
