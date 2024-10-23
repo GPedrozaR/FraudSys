@@ -48,15 +48,15 @@ namespace FraudSys.Infrastructure.Persistence.Repositories
 		public async Task UpdateAccountAsync(string document, Account account)
 		{
 			var accountInDb = await GetAccountByDocumentAsync(document);
-			if (accountInDb != null)
-			{
-				accountInDb.SetBranchNumber(account.BranchNumber);
-				accountInDb.SetNumber(account.Number);
-				accountInDb.SetPixTransactionLimit(account.PixTransactionLimit);
-				accountInDb.SetBranchNumber(account.BranchNumber);
+			if (accountInDb == null)
+				return;
 
-				await _dbContext.GetDbContext().SaveAsync(accountInDb);
-			}
+			accountInDb.SetBranchNumber(account.BranchNumber);
+			accountInDb.SetNumber(account.Number);
+			accountInDb.SetPixTransactionLimit(account.PixTransactionLimit);
+			accountInDb.SetBranchNumber(account.BranchNumber);
+
+			await _dbContext.GetDbContext().SaveAsync(accountInDb);
 		}
 	}
 }
